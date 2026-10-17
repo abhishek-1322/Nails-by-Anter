@@ -1,4 +1,4 @@
-// Nails by A — web server: static site + gallery API + admin panel
+// Nails by Anter — web server: static site + gallery API + admin panel
 const path = require('node:path');
 const crypto = require('node:crypto');
 const express = require('express');
@@ -72,4 +72,4 @@ app.use((err, _req, res, _next) => {
   res.status(status).json({ error: status === 413 ? 'File too large (max 8 MB).' : 'Server error' });
 });
 
-app.listen(PORT, () => console.log(`Nails by A running at http://localhost:${PORT}  (admin: /admin/)`));
+app.listen(PORT, () => console.log(`Nails by Anter running at http://localhost:${PORT}  (admin: /admin/)`));

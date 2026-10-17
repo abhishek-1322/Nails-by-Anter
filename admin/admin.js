@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Nails by A — gallery admin: upload, reorder (drag & drop), edit, delete
+   Nails by Anter — gallery admin: upload, reorder (drag & drop), edit, delete
    ========================================================================== */
 (() => {
   'use strict';

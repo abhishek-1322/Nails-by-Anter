@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Nails by A — shared interactions (loaded on every page)
+   Nails by Anter — shared interactions (loaded on every page)
    Header · mobile menu · scroll reveal · carousel · testimonial slider ·
    lightbox · counters · sticky mobile CTA · form validation
    ========================================================================== */

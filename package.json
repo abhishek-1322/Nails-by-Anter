@@ -13,7 +13,7 @@
     "start": "node server/server.js",
     "seed": "node server/seed.js"
   },
-  "description": "Nails by A — luxury nail art studio website",
+  "description": "Nails by Anter — luxury nail art studio website",
   "private": true,
   "dependencies": {
     "bcryptjs": "^3.0.3",

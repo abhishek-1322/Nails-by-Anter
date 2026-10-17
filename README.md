@@ -1,4 +1,4 @@
-# Nails by A — Luxury Nail Art Studio Website
+# Nails by Anter — Luxury Nail Art Studio Website
 
 A responsive website for a premium nail art studio. It uses HTML5, Tailwind CSS 3 and vanilla JavaScript, with a small Node.js (Express) server and a PostgreSQL database that power the **gallery** and its **admin panel**.
 

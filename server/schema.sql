@@ -1,4 +1,4 @@
--- Nails by A — gallery tables (PostgreSQL). Safe to run repeatedly.
+-- Nails by Anter — gallery tables (PostgreSQL). Safe to run repeatedly.
 CREATE TABLE IF NOT EXISTS admins (
   id            SERIAL PRIMARY KEY,
   username      VARCHAR(64)  NOT NULL UNIQUE,

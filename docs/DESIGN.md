@@ -1,4 +1,4 @@
-# Nails by A — Design Specification
+# Nails by Anter — Design Specification
 
 Open `styleguide.html` to see a live rendering of every component described here.
 
@@ -32,7 +32,7 @@ Motion: reveal-on-scroll (fade, slide up/left/right, zoom), a slow zoom on the h
 ### Home
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│ ♡ Nails by A   Home Gallery Services About FAQ Contact [BOOK]│  sticky header
+│ ♡ Nails by Anter   Home Gallery Services About FAQ Contact [BOOK]│  sticky header
 ├───────────────────────┬──────────────────────────────────────┤
 │ PREMIUM NAIL ART      │                                      │
 │ YOUR NAILS,           │        [ hero hand photo ]           │

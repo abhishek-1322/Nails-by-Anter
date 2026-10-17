@@ -331,13 +331,13 @@
     const end = new Date(start.getTime() + svc.duration * 60000);
     const stamp = (d) => `${iso(d).replace(/-/g, '')}T${String(d.getHours()).padStart(2, '0')}${String(d.getMinutes()).padStart(2, '0')}00`;
     const ics = [
-      'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Nails by A//Booking//EN', 'BEGIN:VEVENT',
+      'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Nails by Anter//Booking//EN', 'BEGIN:VEVENT',
       `UID:${Date.now()}@nailsbya.com`,
       `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, '').split('.')[0]}Z`,
       `DTSTART:${stamp(start)}`, `DTEND:${stamp(end)}`,
-      `SUMMARY:${svc.name} at Nails by A`,
+      `SUMMARY:${svc.name} at Nails by Anter`,
       `DESCRIPTION:Artist: ${artist().name}. Ref ${$('[data-confirm-ref]').textContent}`,
-      'LOCATION:Nails by A\\, Model Town Extension\\, Ludhiana\\, Punjab',
+      'LOCATION:Nails by Anter\\, Model Town Extension\\, Ludhiana\\, Punjab',
       'END:VEVENT', 'END:VCALENDAR',
     ].join('\r\n');
     const url = URL.createObjectURL(new Blob([ics], { type: 'text/calendar' }));
