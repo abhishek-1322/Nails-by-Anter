@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /styleguide.html
+
+Sitemap: https://www.nailsbya.com/sitemap.xml

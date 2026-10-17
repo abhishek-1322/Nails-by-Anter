@@ -1,0 +1,30 @@
+{
+  "name": "nails-by-a",
+  "version": "1.0.0",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build:html": "node scripts/build-html.mjs",
+    "build:css": "tailwindcss -i src/styles/input.css -o assets/css/styles.css --minify",
+    "build": "npm run build:html && npm run build:css",
+    "dev": "node scripts/build-html.mjs --watch & tailwindcss -i src/styles/input.css -o assets/css/styles.css --watch",
+    "serve": "node server/server.js",
+    "start": "node server/server.js",
+    "seed": "node server/seed.js"
+  },
+  "description": "Nails by A — luxury nail art studio website",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "private": true,
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^18.0.6",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "multer": "^2.4.0",
+    "pg": "^8.23.1",
+    "sharp": "^0.35.5"
+  }
+}

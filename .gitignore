@@ -1,0 +1,4 @@
+node_modules/
+.env
+assets/images/gallery/*
+!assets/images/gallery/.gitkeep

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Admin Login — Nails by A</title>
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@500&display=swap">
+  <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+  <div class="login-wrap">
+    <form class="panel login-card" method="post" action="/admin/login">
+      <h1>Nails by A</h1>
+      <p class="sub">Gallery admin</p>
+      <p class="error-msg" id="error" hidden>Wrong username or password.</p>
+      <label class="field">Username
+        <input type="text" name="username" autocomplete="username" required autofocus>
+      </label>
+      <label class="field">Password
+        <input type="password" name="password" autocomplete="current-password" required>
+      </label>
+      <button type="submit" class="btn btn-primary">Log in</button>
+      <a href="/" style="text-align:center;font-size:.8rem">← Back to website</a>
+    </form>
+  </div>
+  <script>
+    if (new URLSearchParams(location.search).has('error')) document.getElementById('error').hidden = false;
+  </script>
+</body>
+</html>

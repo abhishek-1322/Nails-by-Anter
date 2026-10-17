@@ -1,0 +1,73 @@
+<!---
+{
+  "title": "Nail Art Gallery — French, Chrome, Bridal & Floral Designs | Nails by A",
+  "description": "Browse our nail art portfolio: French, chrome, bridal, floral, minimal and glitter designs created at Nails by A studio in Ludhiana. Find your next set and book it.",
+  "nav": "gallery",
+  "scripts": ["gallery.js"]
+}
+--->
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <svg class="floral-art -right-6 bottom-0 hidden h-64 w-48 rotate-6 md:block" aria-hidden="true"><use href="#art-floral"/></svg>
+      <div class="container-x relative py-14 text-center md:py-20">
+        <nav aria-label="Breadcrumb" class="flex justify-center">
+          <ol class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li aria-hidden="true">/</li>
+            <li aria-current="page">Gallery</li>
+          </ol>
+        </nav>
+        <h1 id="page-title" class="display-1 mt-6 text-[clamp(2.2rem,4vw+1rem,4rem)] animate-fade-up">The Nail Art <em>Gallery</em></h1>
+        <p class="lead mx-auto mt-5 max-w-xl animate-fade-up [animation-delay:120ms]">A curated look at sets created in our studio. Tap any design to view it up close — then book it, or let us make it yours.</p>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section pt-10 md:pt-14" aria-label="Design portfolio">
+      <div class="container-x">
+        <div class="-mx-4 overflow-x-auto px-4 pb-2 [scrollbar-width:none] sm:mx-0 sm:px-0 [&::-webkit-scrollbar]:hidden" role="toolbar" aria-label="Filter designs by style">
+          <div class="flex w-max gap-2 sm:w-auto sm:flex-wrap sm:justify-center sm:gap-3" data-gallery-filters>
+            <button type="button" class="chip" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="chip" data-filter="french" aria-pressed="false">French</button>
+            <button type="button" class="chip" data-filter="chrome" aria-pressed="false">Chrome</button>
+            <button type="button" class="chip" data-filter="bridal" aria-pressed="false">Bridal</button>
+            <button type="button" class="chip" data-filter="floral" aria-pressed="false">Floral</button>
+            <button type="button" class="chip" data-filter="minimal" aria-pressed="false">Minimal</button>
+            <button type="button" class="chip" data-filter="glitter" aria-pressed="false">Glitter</button>
+          </div>
+        </div>
+
+        <p class="mt-6 text-center text-xs uppercase tracking-[0.2em] text-ink-mute" data-gallery-status aria-live="polite"></p>
+
+        <div class="mt-8 masonry" data-gallery-grid data-lightbox-group>
+          <noscript>
+            <p class="text-center text-ink-soft">Enable JavaScript to browse the full gallery, or follow us on Instagram for our latest work.</p>
+          </noscript>
+        </div>
+
+        <div class="mt-12 flex flex-col items-center gap-4">
+          <button type="button" class="btn btn-outline" data-gallery-more>
+            Load more designs
+            <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>
+          </button>
+          <div class="h-px w-full" data-gallery-sentinel aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section section-tint relative overflow-hidden" aria-labelledby="gallery-cta">
+      <svg class="floral-art -left-4 top-6 hidden h-56 w-40 -rotate-12 sm:block" aria-hidden="true"><use href="#art-floral"/></svg>
+      <div class="container-x relative text-center reveal">
+        <p class="eyebrow">Found your favourite?</p>
+        <h2 id="gallery-cta" class="heading-2 mt-4">Bring the inspiration, <em>we’ll bring it to life.</em></h2>
+        <p class="lead mx-auto mt-5 max-w-xl">Save a screenshot, mention it when you book, and your artist will tailor the design to your nail shape and length.</p>
+        <div class="mt-9 flex flex-wrap justify-center gap-4">
+          <a href="/booking?service=custom-nail-art" class="btn btn-primary">
+            <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+            Book this look
+          </a>
+          <a href="/services" class="btn btn-outline">View pricing</a>
+        </div>
+      </div>
+    </section>

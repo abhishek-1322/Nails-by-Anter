@@ -1,0 +1,82 @@
+<header id="site-header" class="site-header">
+    <div class="container-x header-inner">
+      <a href="/" class="logo" aria-label="Nails by A — Nail Art Studio, home">
+        <svg class="icon logo-heart" aria-hidden="true"><use href="#i-heart"/></svg>
+        <span class="logo-word">Nails by A</span>
+        <span class="logo-sub">Nail Art Studio</span>
+      </a>
+
+      <nav class="hidden lg:block" aria-label="Primary">
+        <ul class="flex items-center gap-9 xl:gap-11">
+          <li><a class="nav-link" href="/" data-nav="home">Home</a></li>
+          <li><a class="nav-link" href="/gallery" data-nav="gallery">Gallery</a></li>
+          <li><a class="nav-link" href="/services" data-nav="services">Services</a></li>
+          <li><a class="nav-link" href="/about" data-nav="about">About</a></li>
+          <li><a class="nav-link" href="/faq" data-nav="faq">FAQ</a></li>
+          <li><a class="nav-link" href="/contact" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a href="/booking" class="btn btn-primary btn-sm hidden sm:inline-flex" data-nav="booking">
+          <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+          Book Now
+        </a>
+        <a href="https://www.instagram.com/" class="social-link hidden lg:inline-flex" target="_blank" rel="noopener" aria-label="Nails by A on Instagram">
+          <svg class="icon h-5 w-5" aria-hidden="true"><use href="#i-instagram"/></svg>
+        </a>
+        <a href="https://www.pinterest.com/" class="social-link hidden lg:inline-flex" target="_blank" rel="noopener" aria-label="Nails by A on Pinterest">
+          <svg class="icon h-5 w-5" aria-hidden="true"><use href="#i-pinterest"/></svg>
+        </a>
+        <button type="button" class="menu-toggle lg:hidden" aria-expanded="false" aria-controls="mobile-menu" data-menu-open>
+          <span class="sr-only">Open menu</span>
+          <svg class="icon h-6 w-6" aria-hidden="true"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile / tablet navigation drawer -->
+  <div id="mobile-menu" class="mobile-menu" role="dialog" aria-modal="true" aria-label="Site menu" aria-hidden="true">
+    <div class="mobile-menu-backdrop" data-menu-close></div>
+    <div class="mobile-menu-panel">
+      <div class="flex items-center justify-between">
+        <a href="/" class="logo logo-sm" aria-label="Nails by A, home">
+          <svg class="icon logo-heart" aria-hidden="true"><use href="#i-heart"/></svg>
+          <span class="logo-word">Nails by A</span>
+        </a>
+        <button type="button" class="menu-toggle" data-menu-close>
+          <span class="sr-only">Close menu</span>
+          <svg class="icon h-6 w-6" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+      </div>
+
+      <nav class="mt-10" aria-label="Mobile">
+        <ul class="mobile-nav">
+          <li><a href="/" data-nav="home">Home</a></li>
+          <li><a href="/gallery" data-nav="gallery">Gallery</a></li>
+          <li><a href="/services" data-nav="services">Services</a></li>
+          <li><a href="/about" data-nav="about">About</a></li>
+          <li><a href="/faq" data-nav="faq">FAQ</a></li>
+          <li><a href="/contact" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="mt-auto space-y-6 pt-10">
+        <a href="/booking" class="btn btn-primary btn-block">
+          <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+          Book an Appointment
+        </a>
+        <div class="flex items-center justify-between text-sm text-ink-soft">
+          <a href="tel:+919876543210" class="inline-flex items-center gap-2 hover:text-burgundy">
+            <svg class="icon h-4 w-4 text-gold" aria-hidden="true"><use href="#i-phone"/></svg>
+            +91 98765 43210
+          </a>
+          <div class="flex gap-1">
+            <a href="https://www.instagram.com/" class="social-link" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon h-5 w-5" aria-hidden="true"><use href="#i-instagram"/></svg></a>
+            <a href="https://www.pinterest.com/" class="social-link" target="_blank" rel="noopener" aria-label="Pinterest"><svg class="icon h-5 w-5" aria-hidden="true"><use href="#i-pinterest"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

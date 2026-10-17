@@ -1,0 +1,101 @@
+<!---
+{
+  "title": "Style Guide — Nails by A Design System",
+  "description": "Internal design system reference: colours, typography, buttons, cards, forms and components for the Nails by A website.",
+  "noindex": true,
+  "noStickyCta": true
+}
+--->
+    <section class="page-hero">
+      <div class="container-x py-14 md:py-16">
+        <p class="eyebrow">Internal reference</p>
+        <h1 class="display-1 mt-4 text-[clamp(2.2rem,4vw+1rem,3.75rem)]">Design <em>System</em></h1>
+        <p class="lead mt-4 max-w-xl">Tokens and reusable components used across the site. Classes are defined in <code class="rounded bg-white/70 px-1.5 py-0.5 text-sm">src/styles/input.css</code>; tokens in <code class="rounded bg-white/70 px-1.5 py-0.5 text-sm">tailwind.config.js</code>.</p>
+      </div>
+    </section>
+
+    <div class="container-x space-y-20 py-16">
+      <!-- Colours -->
+      <section aria-labelledby="sg-colors">
+        <h2 id="sg-colors" class="section-title">Colour</h2>
+        <ul class="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+          <li><div class="h-24 rounded-xl bg-cream ring-1 ring-gold/20"></div><p class="mt-2 text-sm font-medium">Cream</p><p class="text-xs text-ink-mute">#FAF7F2 · cream</p></li>
+          <li><div class="h-24 rounded-xl bg-blush"></div><p class="mt-2 text-sm font-medium">Blush</p><p class="text-xs text-ink-mute">#F3E3E0 · blush</p></li>
+          <li><div class="h-24 rounded-xl bg-burgundy"></div><p class="mt-2 text-sm font-medium">Burgundy</p><p class="text-xs text-ink-mute">#6E2638 · burgundy</p></li>
+          <li><div class="h-24 rounded-xl bg-burgundy-400"></div><p class="mt-2 text-sm font-medium">Rose</p><p class="text-xs text-ink-mute">#A0566A · burgundy-400</p></li>
+          <li><div class="h-24 rounded-xl bg-gold"></div><p class="mt-2 text-sm font-medium">Gold</p><p class="text-xs text-ink-mute">#B8945B · gold (decor)</p></li>
+          <li><div class="h-24 rounded-xl bg-gold-700"></div><p class="mt-2 text-sm font-medium">Gold text</p><p class="text-xs text-ink-mute">#8A6A3A · gold-700 (AA)</p></li>
+        </ul>
+      </section>
+
+      <!-- Type -->
+      <section aria-labelledby="sg-type">
+        <h2 id="sg-type" class="section-title">Typography</h2>
+        <div class="mt-8 space-y-6">
+          <div><p class="text-xs text-ink-mute">.display-1 — Playfair Display</p><p class="display-1">Your Nails, <em>Your Style.</em></p></div>
+          <div><p class="text-xs text-ink-mute">.heading-2</p><p class="heading-2">Crafted with care, <em>finished to perfection.</em></p></div>
+          <div><p class="text-xs text-ink-mute">.section-title.title-lines</p><p class="section-title title-lines">Our Signature Work</p></div>
+          <div><p class="text-xs text-ink-mute">.eyebrow — Montserrat</p><p class="eyebrow">Premium nail art &amp; care</p></div>
+          <div><p class="text-xs text-ink-mute">.lead</p><p class="lead max-w-xl">Luxury nail art made just for you — hand-painted details, flawless gel and extensions.</p></div>
+        </div>
+      </section>
+
+      <!-- Buttons -->
+      <section aria-labelledby="sg-buttons">
+        <h2 id="sg-buttons" class="section-title">Buttons</h2>
+        <div class="mt-8 flex flex-wrap items-center gap-4">
+          <a href="#" class="btn btn-primary"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>.btn-primary<svg class="icon btn-arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+          <a href="#" class="btn btn-outline">.btn-outline</a>
+          <a href="#" class="btn btn-primary btn-sm">.btn-sm</a>
+          <a href="#" class="text-link">.text-link <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+          <button type="button" class="icon-btn" aria-label="Example icon button"><svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+          <button type="button" class="chip" aria-pressed="true">.chip active</button>
+          <button type="button" class="chip" aria-pressed="false">.chip</button>
+        </div>
+        <div class="mt-6 flex flex-wrap gap-4 rounded-2xl bg-burgundy p-6">
+          <a href="#" class="btn btn-light">.btn-light</a>
+          <a href="#" class="btn btn-cream">.btn-cream</a>
+          <button type="button" class="icon-btn icon-btn-light" aria-label="Example"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+        </div>
+      </section>
+
+      <!-- Cards -->
+      <section aria-labelledby="sg-cards">
+        <h2 id="sg-cards" class="section-title">Cards</h2>
+        <div class="mt-8 grid gap-8 md:grid-cols-3">
+          <a href="#" class="collection-card group">
+            <div class="img-zoom"><img src="assets/images/sig-french.webp" width="396" height="296" alt="" class="h-full w-full object-cover" loading="lazy"></div>
+            <h3>.collection-card</h3><p>Hover to zoom</p>
+          </a>
+          <div class="service-card group">
+            <div class="img-zoom aspect-[4/3]"><img src="assets/images/sig-chrome.webp" width="402" height="296" alt="" class="h-full w-full object-cover" loading="lazy"></div>
+            <div class="p-6"><span class="service-meta"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>60 min</span><h3 class="mt-3 font-display text-2xl">.service-card</h3><p class="price mt-3"><small class="block">From</small>₹1,199</p></div>
+          </div>
+          <div class="space-y-6">
+            <div class="group flex gap-4"><span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span><div><h3 class="font-sans text-sm font-semibold uppercase tracking-[0.18em] text-ink">.feature-icon</h3><p class="mt-1 text-sm text-ink-soft">Feature list item</p></div></div>
+            <div class="group text-center"><span class="service-icon"><svg class="icon" aria-hidden="true"><use href="#i-hand"/></svg></span><p class="mt-3 text-sm">.service-icon</p></div>
+            <div class="card p-5"><p class="text-sm">.card — generic surface</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Forms -->
+      <section aria-labelledby="sg-forms">
+        <h2 id="sg-forms" class="section-title">Forms</h2>
+        <div class="mt-8 grid max-w-2xl gap-5 sm:grid-cols-2">
+          <div><label class="form-label" for="sg-a">.form-label <span class="req">*</span></label><input id="sg-a" class="form-input" placeholder=".form-input"></div>
+          <div><label class="form-label" for="sg-b">Invalid state</label><input id="sg-b" class="form-input" aria-invalid="true" value="bad@"><p class="form-error">Please enter a valid email address.</p></div>
+          <div><label class="form-label" for="sg-c">Select</label><select id="sg-c" class="form-input"><option>Option</option></select></div>
+          <div class="flex items-end"><label class="form-check"><input type="checkbox" checked> .form-check</label></div>
+          <label class="option-card sm:col-span-2"><input type="radio" name="sg" class="sr-only" checked><span class="font-display text-lg">.option-card (selected)</span><span class="option-check" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span></label>
+        </div>
+      </section>
+
+      <!-- Accordion -->
+      <section aria-labelledby="sg-acc">
+        <h2 id="sg-acc" class="section-title">Accordion</h2>
+        <div class="accordion mt-8 max-w-2xl">
+          <details><summary>.accordion &gt; details<span class="acc-icon" aria-hidden="true"><svg class="icon"><use href="#i-plus"/></svg></span></summary><div class="acc-body"><p>Native, accessible disclosure with animated height in supporting browsers.</p></div></details>
+        </div>
+      </section>
+    </div>

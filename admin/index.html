@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Gallery Admin — Nails by A</title>
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@500&display=swap">
+  <link rel="stylesheet" href="/admin/admin.css">
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.2/Sortable.min.js" defer></script>
+  <script src="/admin/admin.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/admin/">Nails by A <small>Gallery admin</small></a>
+    <div class="topbar-actions">
+      <span class="topbar-user" data-user></span>
+      <a class="btn btn-sm" href="/gallery" target="_blank" rel="noopener">View gallery</a>
+      <form method="post" action="/admin/logout"><button class="btn btn-sm" type="submit">Log out</button></form>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ UPLOAD ============ -->
+    <section class="panel" aria-labelledby="upload-title">
+      <div class="panel-head">
+        <div>
+          <h2 id="upload-title">Upload images</h2>
+          <p>JPG, PNG or WebP, up to 8 MB each. Images are resized to 1600px and saved as WebP. New uploads appear first in the gallery.</p>
+        </div>
+      </div>
+
+      <form data-upload-form>
+        <label class="dropzone" data-dropzone tabindex="0">
+          <input type="file" name="images" accept="image/jpeg,image/png,image/webp" multiple hidden data-file-input>
+          <strong>Choose images</strong>
+          <span>or drag and drop them here</span>
+        </label>
+
+        <div class="upload-list" data-upload-list></div>
+
+        <div class="upload-options" data-upload-options hidden>
+          <div>
+            <p class="field" style="margin:0 0 .5rem">Styles (used for the gallery filters)</p>
+            <div class="checks" data-upload-tags></div>
+          </div>
+          <label class="check" style="justify-self:start"><input type="checkbox" name="home" value="1"> Also show on home page</label>
+        </div>
+
+        <div class="upload-actions" data-upload-actions hidden>
+          <button type="button" class="btn" data-upload-clear>Clear</button>
+          <button type="submit" class="btn btn-primary" data-upload-submit>Upload</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- ============ IMAGES ============ -->
+    <section class="panel" aria-labelledby="images-title">
+      <div class="panel-head">
+        <div>
+          <h2 id="images-title">Gallery images</h2>
+          <p>Drag images to change their order, then click <strong>Save order</strong>. <span data-counts></span></p>
+        </div>
+      </div>
+
+      <div class="grid" data-grid></div>
+      <p class="empty" data-empty hidden>No images yet. Upload your first design above.</p>
+
+      <div class="order-bar" data-order-bar hidden>
+        <span>The order has changed.</span>
+        <span style="display:flex;gap:.5rem">
+          <button type="button" class="btn btn-sm" data-order-reset>Undo</button>
+          <button type="button" class="btn btn-sm btn-primary" data-order-save>Save order</button>
+        </span>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ EDIT DIALOG ============ -->
+  <dialog data-edit-dialog aria-labelledby="edit-title">
+    <form method="dialog" class="dialog-body" data-edit-form>
+      <h3 id="edit-title">Edit image</h3>
+      <img class="dialog-preview" alt="" data-edit-preview>
+      <label class="field">Title <input type="text" name="title" maxlength="120" required></label>
+      <label class="field">Alt text (describes the image for screen readers and Google) <input type="text" name="alt" maxlength="255"></label>
+      <div>
+        <p class="field" style="margin:0 0 .5rem">Styles</p>
+        <div class="checks" data-edit-tags></div>
+      </div>
+      <div class="checks">
+        <label class="check"><input type="checkbox" name="active"> Visible on website</label>
+        <label class="check"><input type="checkbox" name="home"> Show on home page</label>
+      </div>
+      <div class="dialog-actions">
+        <button type="button" class="btn" data-edit-cancel>Cancel</button>
+        <button type="submit" class="btn btn-primary" value="save">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="toast" role="status" aria-live="polite" data-toast hidden></div>
+</body>
+</html>

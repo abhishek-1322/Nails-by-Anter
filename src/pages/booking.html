@@ -1,0 +1,193 @@
+<!---
+{
+  "title": "Book an Appointment — Nails by A Nail Art Studio, Ludhiana",
+  "description": "Book your nail appointment online in under a minute. Choose your service, artist, date and time at Nails by A, Ludhiana.",
+  "nav": "booking",
+  "noStickyCta": true,
+  "scripts": ["booking.js"]
+}
+--->
+    <section class="page-hero" aria-labelledby="page-title">
+      <svg class="floral-art -right-6 -bottom-6 hidden h-56 w-40 md:block" aria-hidden="true"><use href="#art-floral"/></svg>
+      <div class="container-x relative py-12 text-center md:py-16">
+        <nav aria-label="Breadcrumb" class="flex justify-center">
+          <ol class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li aria-hidden="true">/</li>
+            <li aria-current="page">Booking</li>
+          </ol>
+        </nav>
+        <h1 id="page-title" class="display-1 mt-5 text-[clamp(2.1rem,3.6vw+1rem,3.6rem)] animate-fade-up">Book an <em>Appointment</em></h1>
+        <p class="lead mx-auto mt-4 max-w-lg animate-fade-up [animation-delay:120ms]">Six quick steps to your next beautiful set.</p>
+      </div>
+    </section>
+
+    <section class="section pt-10 md:pt-14" aria-label="Booking form">
+      <div class="container-x">
+        <form id="booking-form" class="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-10" novalidate data-booking>
+          <!-- ============ WIZARD ============ -->
+          <div class="lg:col-span-8">
+            <ol class="stepper" data-stepper aria-label="Booking progress">
+              <li class="step" data-step-indicator="1"><span class="step-dot">1</span><span class="step-label">Service</span></li>
+              <li class="step" data-step-indicator="2"><span class="step-dot">2</span><span class="step-label">Artist</span></li>
+              <li class="step" data-step-indicator="3"><span class="step-dot">3</span><span class="step-label">Date</span></li>
+              <li class="step" data-step-indicator="4"><span class="step-dot">4</span><span class="step-label">Time</span></li>
+              <li class="step" data-step-indicator="5"><span class="step-dot">5</span><span class="step-label">Details</span></li>
+              <li class="step" data-step-indicator="6"><span class="step-dot">6</span><span class="step-label">Confirm</span></li>
+            </ol>
+            <p class="mt-4 text-center text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-burgundy sm:hidden" data-step-caption aria-hidden="true"></p>
+
+            <div class="card mt-8 p-4 sm:p-8 lg:p-10">
+              <!-- Step 1: Service -->
+              <fieldset data-step="1">
+                <legend class="w-full">
+                  <span class="eyebrow">Step 1 of 6</span>
+                  <span class="mt-2 block font-display text-2xl text-burgundy sm:text-3xl" tabindex="-1" data-step-heading>Select a service</span>
+                </legend>
+                <div class="mt-7 grid gap-4 sm:grid-cols-2" data-services></div>
+              </fieldset>
+
+              <!-- Step 2: Artist -->
+              <fieldset data-step="2" hidden>
+                <legend class="w-full">
+                  <span class="eyebrow">Step 2 of 6</span>
+                  <span class="mt-2 block font-display text-2xl text-burgundy sm:text-3xl" tabindex="-1" data-step-heading>Choose your artist</span>
+                </legend>
+                <div class="mt-7 grid gap-4 sm:grid-cols-2" data-artists></div>
+              </fieldset>
+
+              <!-- Step 3: Date -->
+              <fieldset data-step="3" hidden>
+                <legend class="w-full">
+                  <span class="eyebrow">Step 3 of 6</span>
+                  <span class="mt-2 block font-display text-2xl text-burgundy sm:text-3xl" tabindex="-1" data-step-heading>Pick a date</span>
+                </legend>
+                <div class="mx-auto mt-7 max-w-md">
+                  <div class="flex items-center justify-between">
+                    <button type="button" class="icon-btn" data-cal-prev aria-label="Previous month"><svg class="icon" aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
+                    <p class="font-display text-xl text-ink" data-cal-title aria-live="polite"></p>
+                    <button type="button" class="icon-btn" data-cal-next aria-label="Next month"><svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+                  </div>
+                  <div class="cal-grid mt-5" aria-hidden="true">
+                    <span class="cal-dow">Sun</span><span class="cal-dow">Mon</span><span class="cal-dow">Tue</span><span class="cal-dow">Wed</span><span class="cal-dow">Thu</span><span class="cal-dow">Fri</span><span class="cal-dow">Sat</span>
+                  </div>
+                  <div class="cal-grid" data-cal-grid role="group" aria-label="Available dates"></div>
+                  <p class="mt-5 flex items-center justify-center gap-2 text-xs text-ink-mute">
+                    <svg class="icon h-4 w-4 text-gold" aria-hidden="true"><use href="#i-clock"/></svg>
+                    Closed on Mondays · bookings open 60 days ahead
+                  </p>
+                </div>
+              </fieldset>
+
+              <!-- Step 4: Time -->
+              <fieldset data-step="4" hidden>
+                <legend class="w-full">
+                  <span class="eyebrow">Step 4 of 6</span>
+                  <span class="mt-2 block font-display text-2xl text-burgundy sm:text-3xl" tabindex="-1" data-step-heading>Select a time</span>
+                </legend>
+                <p class="mt-2 text-sm text-ink-soft" data-time-caption></p>
+                <div class="mt-7 space-y-7" data-slots></div>
+              </fieldset>
+
+              <!-- Step 5: Details -->
+              <fieldset data-step="5" hidden>
+                <legend class="w-full">
+                  <span class="eyebrow">Step 5 of 6</span>
+                  <span class="mt-2 block font-display text-2xl text-burgundy sm:text-3xl" tabindex="-1" data-step-heading>Your details</span>
+                </legend>
+                <div class="mt-7 grid gap-5 sm:grid-cols-2">
+                  <div>
+                    <label for="bk-name" class="form-label">Full name <span class="req">*</span></label>
+                    <input id="bk-name" name="name" type="text" class="form-input" autocomplete="name" required minlength="2" placeholder="Your name" aria-describedby="bk-name-error">
+                    <p id="bk-name-error" class="form-error" hidden></p>
+                  </div>
+                  <div>
+                    <label for="bk-phone" class="form-label">Phone <span class="req">*</span></label>
+                    <input id="bk-phone" name="phone" type="tel" class="form-input" autocomplete="tel" required pattern="\+?[0-9\s\(\)\-]{10,16}" data-msg-pattern="Please enter a valid phone number." placeholder="+91 98765 43210" aria-describedby="bk-phone-error">
+                    <p id="bk-phone-error" class="form-error" hidden></p>
+                  </div>
+                  <div class="sm:col-span-2">
+                    <label for="bk-email" class="form-label">Email <span class="req">*</span></label>
+                    <input id="bk-email" name="email" type="email" class="form-input" autocomplete="email" required placeholder="you@example.com" aria-describedby="bk-email-error">
+                    <p id="bk-email-error" class="form-error" hidden></p>
+                  </div>
+                  <div class="sm:col-span-2">
+                    <label for="bk-notes" class="form-label">Design ideas or notes</label>
+                    <textarea id="bk-notes" name="notes" class="form-input" rows="4" placeholder="Inspiration, nail shape, length, allergies…"></textarea>
+                  </div>
+                  <div class="sm:col-span-2">
+                    <label class="form-check">
+                      <input id="bk-consent" name="consent" type="checkbox" required data-msg-required="Please accept the booking policy to continue." aria-describedby="bk-consent-error">
+                      <span>I agree to the <a href="/faq#policies" class="text-burgundy underline underline-offset-2">booking &amp; cancellation policy</a> (24 hours’ notice for changes).</span>
+                    </label>
+                    <p id="bk-consent-error" class="form-error" hidden></p>
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- Step 6: Confirmation -->
+              <div data-step="6" hidden>
+                <div class="text-center">
+                  <span class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-burgundy text-cream shadow-lift">
+                    <svg class="icon h-8 w-8" aria-hidden="true"><use href="#i-check"/></svg>
+                  </span>
+                  <p class="eyebrow mt-6">Step 6 of 6 · Confirmed</p>
+                  <h2 class="mt-2 font-display text-3xl text-burgundy" tabindex="-1" data-step-heading>You’re booked, <span data-confirm-name></span>!</h2>
+                  <p class="mx-auto mt-4 max-w-md text-sm leading-relaxed text-ink-soft">A confirmation has been sent to <strong class="break-all font-medium text-ink" data-confirm-email></strong>. We’ll send a reminder 24 hours before your visit.</p>
+                  <p class="mt-6 inline-flex items-center gap-2 rounded-full bg-blush px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-burgundy">Ref <span data-confirm-ref></span></p>
+                  <div class="mt-8 flex flex-wrap justify-center gap-3">
+                    <button type="button" class="btn btn-primary" data-ics>
+                      <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+                      Add to calendar
+                    </button>
+                    <a href="/" class="btn btn-outline">Back to home</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Navigation -->
+              <div class="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-gold/20 pt-6 sm:flex-nowrap sm:gap-4" data-wizard-nav>
+                <button type="button" class="btn btn-outline btn-sm shrink-0 px-4 sm:px-5" data-back>
+                  <svg class="icon" aria-hidden="true"><use href="#i-arrow-left"/></svg>
+                  <span class="sr-only sm:not-sr-only">Back</span>
+                </button>
+                <p class="order-last hidden w-full text-center text-xs text-ink-mute sm:order-none sm:block sm:w-auto sm:text-left" data-step-hint aria-live="polite"></p>
+                <button type="button" class="btn btn-primary min-w-0 flex-1 whitespace-normal px-5 text-center leading-tight sm:flex-none sm:whitespace-nowrap sm:px-7" data-next>
+                  <span data-next-label>Continue</span>
+                  <svg class="icon btn-arrow hidden sm:block" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ============ SUMMARY ============ -->
+          <aside class="lg:col-span-4" aria-labelledby="summary-title">
+            <div class="card overflow-hidden lg:sticky lg:top-28">
+              <div class="relative h-28 overflow-hidden bg-blush">
+                <img src="assets/images/sig-floral.webp" width="402" height="296" alt="" class="h-full w-full object-cover" data-summary-img>
+                <div class="absolute inset-0 bg-gradient-to-t from-burgundy-800/70 to-transparent"></div>
+                <h2 id="summary-title" class="absolute bottom-4 left-6 font-display text-xl text-cream">Booking summary</h2>
+              </div>
+              <div class="p-6">
+                <dl class="divide-y divide-gold/15" aria-live="polite">
+                  <div class="summary-row"><dt>Service</dt><dd data-sum="service">—</dd></div>
+                  <div class="summary-row"><dt>Artist</dt><dd data-sum="artist">—</dd></div>
+                  <div class="summary-row"><dt>Date</dt><dd data-sum="date">—</dd></div>
+                  <div class="summary-row"><dt>Time</dt><dd data-sum="time">—</dd></div>
+                  <div class="summary-row"><dt>Duration</dt><dd data-sum="duration">—</dd></div>
+                </dl>
+                <div class="mt-3 flex items-baseline justify-between border-t border-gold/30 pt-5">
+                  <span class="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-ink-soft">Estimated total</span>
+                  <span class="font-display text-3xl text-burgundy" data-sum="price">₹0</span>
+                </div>
+                <p class="mt-4 text-xs leading-relaxed text-ink-mute">Pay at the studio after your appointment. Add-ons are confirmed with your artist on the day.</p>
+              </div>
+              <div class="flex items-center gap-3 border-t border-gold/20 bg-blush-50 px-6 py-4 text-xs text-ink-soft">
+                <svg class="icon h-5 w-5 text-gold" aria-hidden="true"><use href="#i-phone"/></svg>
+                <span>Prefer to call? <a href="tel:+919876543210" class="font-medium text-burgundy">+91 98765 43210</a></span>
+              </div>
+            </div>
+          </aside>
+        </form>
+      </div>
+    </section>

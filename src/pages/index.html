@@ -1,0 +1,402 @@
+<!---
+{
+  "title": "Nails by A — Luxury Nail Art Studio in Ludhiana | Your Nails, Your Style",
+  "description": "Premium nail art, gel nails, extensions and bridal nails in Ludhiana, Punjab. Hygienic studio, luxury products and custom designs by expert artists. Book your appointment online.",
+  "nav": "home",
+  "scripts": ["home-gallery.js"],
+  "head": "<link rel=\"preload\" as=\"image\" href=\"assets/images/hero.webp\" fetchpriority=\"high\">"
+}
+--->
+    <!-- ============ HERO ============ -->
+    <section class="relative overflow-hidden bg-[#F3E7E2]" aria-labelledby="hero-title">
+      <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-[64%]">
+        <div class="relative h-[52vh] min-h-[320px] overflow-hidden sm:h-[58vh] lg:h-full">
+          <img src="assets/images/hero.webp" width="1218" height="712"
+               alt="Almond-shaped nude nails with gold lines and hand-painted white flowers"
+               class="h-full w-full animate-slow-zoom object-cover object-[30%_center] lg:object-[70%_center]" fetchpriority="high">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#F3E7E2] via-transparent to-transparent lg:bg-gradient-to-r lg:from-[#F3E7E2] lg:via-[#F3E7E2]/30 lg:to-transparent lg:[background-size:60%_100%] lg:bg-no-repeat" aria-hidden="true"></div>
+          <div class="absolute bottom-8 right-6 hidden animate-float sm:block lg:bottom-10 lg:right-10">
+            <div class="card flex items-center gap-3 bg-cream/90 px-4 py-3 backdrop-blur">
+              <div class="flex -space-x-2" aria-hidden="true">
+                <img src="assets/images/sig-french.webp" alt="" width="40" height="40" class="h-9 w-9 rounded-full object-cover ring-2 ring-cream">
+                <img src="assets/images/sig-chrome.webp" alt="" width="40" height="40" class="h-9 w-9 rounded-full object-cover ring-2 ring-cream">
+                <img src="assets/images/sig-floral.webp" alt="" width="40" height="40" class="h-9 w-9 rounded-full object-cover ring-2 ring-cream">
+              </div>
+              <div>
+                <div class="stars justify-start" aria-hidden="true">
+                  <svg class="icon h-3 w-3"><use href="#i-star"/></svg><svg class="icon h-3 w-3"><use href="#i-star"/></svg><svg class="icon h-3 w-3"><use href="#i-star"/></svg><svg class="icon h-3 w-3"><use href="#i-star"/></svg><svg class="icon h-3 w-3"><use href="#i-star"/></svg>
+                </div>
+                <p class="mt-0.5 text-xs text-ink-soft"><strong class="font-semibold text-burgundy">4.9</strong> from 1,200+ happy clients</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-x relative z-10 -mt-24 pb-14 sm:-mt-28 lg:mt-0 lg:flex lg:min-h-[620px] lg:items-center lg:py-24 xl:min-h-[680px]">
+        <div class="max-w-xl">
+          <p class="eyebrow animate-fade-up">Premium Nail Art &amp; Care</p>
+          <h1 id="hero-title" class="display-1 mt-5 animate-fade-up [animation-delay:120ms]">
+            Your Nails,<br><em>Your Style.</em>
+          </h1>
+          <p class="lead mt-6 max-w-md animate-fade-up [animation-delay:240ms]">
+            Luxury nail art made just for you — hand-painted details, flawless gel and extensions, crafted in a calm, hygienic studio.
+          </p>
+          <div class="mt-9 flex flex-wrap items-center gap-4 animate-fade-up [animation-delay:360ms]">
+            <a href="/booking" class="btn btn-primary">
+              <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+              Book an Appointment
+              <svg class="icon btn-arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+            </a>
+            <a href="/gallery" class="text-link px-2 py-3">
+              Explore designs
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SIGNATURE COLLECTIONS ============ -->
+    <section class="section" aria-labelledby="collections-title" data-carousel>
+      <div class="container-x">
+        <h2 id="collections-title" class="section-title title-lines reveal">Our Signature Work</h2>
+        <p class="mx-auto mt-4 max-w-lg text-center text-sm text-ink-soft reveal" style="--delay:80ms">Six collections, endless ways to make them yours.</p>
+
+        <ul class="carousel-track mt-12" data-carousel-track aria-label="Signature nail collections">
+          <li class="reveal" style="--delay:0ms">
+            <a href="/gallery?filter=french" class="collection-card group">
+              <div class="img-zoom"><img src="assets/images/sig-french.webp" width="396" height="296" loading="lazy" alt="Classic French manicure with crisp white tips" class="h-full w-full object-cover"></div>
+              <h3>French Elegance</h3>
+              <p>Timeless &amp; classy</p>
+            </a>
+          </li>
+          <li class="reveal" style="--delay:90ms">
+            <a href="/gallery?filter=chrome" class="collection-card group">
+              <div class="img-zoom"><img src="assets/images/sig-chrome.webp" width="402" height="296" loading="lazy" alt="Pearly pink chrome nails with a glazed finish" class="h-full w-full object-cover"></div>
+              <h3>Chrome Glam</h3>
+              <p>Shine in every angle</p>
+            </a>
+          </li>
+          <li class="reveal" style="--delay:180ms">
+            <a href="/gallery?filter=floral" class="collection-card group">
+              <div class="img-zoom"><img src="assets/images/sig-floral.webp" width="402" height="296" loading="lazy" alt="Sheer pink nails with hand-painted white blossoms" class="h-full w-full object-cover"></div>
+              <h3>Floral Art</h3>
+              <p>Nature on your nails</p>
+            </a>
+          </li>
+          <li class="reveal" style="--delay:270ms">
+            <a href="/gallery?filter=bridal" class="collection-card group">
+              <div class="img-zoom"><img src="assets/images/sig-glam.webp" width="398" height="296" loading="lazy" alt="Bridal nails in milky nude with delicate gold leaf" class="h-full w-full object-cover"></div>
+              <h3>Bridal Glam</h3>
+              <p>Because you deserve it</p>
+            </a>
+          </li>
+          <li>
+            <a href="/gallery?filter=minimal" class="collection-card group">
+              <div class="img-zoom"><img src="assets/images/g-minimal-leaf.webp" width="256" height="204" loading="lazy" alt="Minimal nude nails with fine black botanical line art" class="h-full w-full object-cover"></div>
+              <h3>Minimal Chic</h3>
+              <p>Less, but perfect</p>
+            </a>
+          </li>
+          <li>
+            <a href="/gallery" class="collection-card group">
+              <div class="img-zoom"><img src="assets/images/g-burgundy.webp" width="256" height="204" loading="lazy" alt="Glossy deep burgundy nails with a gold foil accent" class="h-full w-full object-cover"></div>
+              <h3>Seasonal Edit</h3>
+              <p>Berry tones &amp; festive gold</p>
+            </a>
+          </li>
+        </ul>
+
+        <div class="mt-10 flex items-center justify-center gap-3">
+          <button type="button" class="icon-btn" data-carousel-prev aria-label="Previous collections">
+            <svg class="icon" aria-hidden="true"><use href="#i-chevron-left"/></svg>
+          </button>
+          <a href="/gallery" class="text-link mx-4">View all designs</a>
+          <button type="button" class="icon-btn" data-carousel-next aria-label="Next collections">
+            <svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section section-tint" aria-labelledby="services-title">
+      <div class="container-x">
+        <h2 id="services-title" class="section-title title-lines reveal">Designed for Your Moment</h2>
+
+        <ul class="mt-14 flex flex-wrap justify-center gap-y-12">
+          <li class="basis-1/2 px-2 sm:basis-1/3 lg:basis-1/5 reveal" style="--delay:0ms">
+            <a href="/services#classic-manicure" class="group block text-center">
+              <span class="service-icon"><svg class="icon" aria-hidden="true"><use href="#i-hand"/></svg></span>
+              <h3 class="mt-5 font-sans text-sm font-medium uppercase tracking-[0.22em] text-ink group-hover:text-burgundy">Manicure</h3>
+              <p class="mt-2 text-xs tracking-wide text-ink-soft">Cleanse · Shape · Care</p>
+            </a>
+          </li>
+          <li class="basis-1/2 px-2 sm:basis-1/3 lg:basis-1/5 reveal" style="--delay:80ms">
+            <a href="/services#custom-nail-art" class="group block text-center">
+              <span class="service-icon"><svg class="icon" aria-hidden="true"><use href="#i-brush"/></svg></span>
+              <h3 class="mt-5 font-sans text-sm font-medium uppercase tracking-[0.22em] text-ink group-hover:text-burgundy">Nail Art</h3>
+              <p class="mt-2 text-xs tracking-wide text-ink-soft">Trendy · Creative · Unique</p>
+            </a>
+          </li>
+          <li class="basis-1/2 px-2 sm:basis-1/3 lg:basis-1/5 reveal" style="--delay:160ms">
+            <a href="/services#gel-polish" class="group block text-center">
+              <span class="service-icon"><svg class="icon" aria-hidden="true"><use href="#i-polish"/></svg></span>
+              <h3 class="mt-5 font-sans text-sm font-medium uppercase tracking-[0.22em] text-ink group-hover:text-burgundy">Gel Nails</h3>
+              <p class="mt-2 text-xs tracking-wide text-ink-soft">Glossy · Lasting · Chip-free</p>
+            </a>
+          </li>
+          <li class="basis-1/2 px-2 sm:basis-1/3 lg:basis-1/5 reveal" style="--delay:240ms">
+            <a href="/services#nail-extensions" class="group block text-center">
+              <span class="service-icon"><svg class="icon" aria-hidden="true"><use href="#i-sparkle"/></svg></span>
+              <h3 class="mt-5 font-sans text-sm font-medium uppercase tracking-[0.22em] text-ink group-hover:text-burgundy">Extensions</h3>
+              <p class="mt-2 text-xs tracking-wide text-ink-soft">Longer · Stronger · Prettier</p>
+            </a>
+          </li>
+          <li class="basis-1/2 px-2 sm:basis-1/3 lg:basis-1/5 reveal" style="--delay:320ms">
+            <a href="/services#bridal-nails" class="group block text-center">
+              <span class="service-icon"><svg class="icon" aria-hidden="true"><use href="#i-ring"/></svg></span>
+              <h3 class="mt-5 font-sans text-sm font-medium uppercase tracking-[0.22em] text-ink group-hover:text-burgundy">Bridal Nails</h3>
+              <p class="mt-2 text-xs tracking-wide text-ink-soft">Elegant · Timeless · Yours</p>
+            </a>
+          </li>
+        </ul>
+
+        <div class="mt-14 text-center reveal">
+          <a href="/services" class="btn btn-outline">
+            Services &amp; Pricing
+            <svg class="icon btn-arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY PREVIEW ============ -->
+    <section class="section" aria-labelledby="gallery-title">
+      <div class="container-x grid gap-12 lg:grid-cols-12 lg:items-center lg:gap-14">
+        <div class="lg:col-span-4 reveal reveal-left">
+          <p class="eyebrow">Portfolio</p>
+          <h2 id="gallery-title" class="mt-4 font-display text-3xl uppercase tracking-[0.06em] text-burgundy sm:text-4xl">The Nail Art Gallery</h2>
+          <p class="mt-5 max-w-sm leading-relaxed text-ink-soft">Explore a world of creativity, colours and custom designs — from quiet-luxury nudes to statement chrome.</p>
+          <a href="/gallery" class="btn btn-outline mt-8">
+            View all designs
+            <svg class="icon btn-arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+          </a>
+        </div>
+
+        <div class="lg:col-span-8" data-lightbox-group>
+          <div class="masonry sm:columns-3 lg:columns-4" data-home-gallery>
+            <a href="assets/images/g-french.webp" class="gallery-item group aspect-[4/5] reveal reveal-zoom" data-lightbox data-caption="Soft French · French">
+              <img src="assets/images/g-french.webp" width="254" height="204" loading="lazy" alt="Soft French manicure on almond nails">
+              <span class="gallery-overlay"><svg class="icon" aria-hidden="true"><use href="#i-zoom"/></svg><span class="gallery-overlay-title">Soft French</span><span class="gallery-overlay-tag">French</span></span>
+            </a>
+            <a href="assets/images/g-ombre.webp" class="gallery-item group aspect-square reveal reveal-zoom" style="--delay:60ms" data-lightbox data-caption="Aura Ombré · Minimal">
+              <img src="assets/images/g-ombre.webp" width="254" height="204" loading="lazy" alt="Pastel aura ombré nails in pink, lilac and mint">
+              <span class="gallery-overlay"><svg class="icon" aria-hidden="true"><use href="#i-zoom"/></svg><span class="gallery-overlay-title">Aura Ombré</span><span class="gallery-overlay-tag">Minimal</span></span>
+            </a>
+            <a href="assets/images/g-pink-glitter.webp" class="gallery-item group aspect-square reveal reveal-zoom" style="--delay:120ms" data-lightbox data-caption="Rosé Shimmer · Glitter">
+              <img src="assets/images/g-pink-glitter.webp" width="256" height="204" loading="lazy" alt="Rose pink glitter nails with a shimmer finish">
+              <span class="gallery-overlay"><svg class="icon" aria-hidden="true"><use href="#i-zoom"/></svg><span class="gallery-overlay-title">Rosé Shimmer</span><span class="gallery-overlay-tag">Glitter</span></span>
+            </a>
+            <a href="assets/images/g-red-heart.webp" class="gallery-item group aspect-[4/5] reveal reveal-zoom" style="--delay:180ms" data-lightbox data-caption="Love Letter · Nail Art">
+              <img src="assets/images/g-red-heart.webp" width="256" height="204" loading="lazy" alt="Red and nude nails with hand-drawn heart details">
+              <span class="gallery-overlay"><svg class="icon" aria-hidden="true"><use href="#i-zoom"/></svg><span class="gallery-overlay-title">Love Letter</span><span class="gallery-overlay-tag">Nail Art</span></span>
+            </a>
+            <a href="assets/images/g-blue-gold.webp" class="gallery-item group aspect-[4/5] reveal reveal-zoom" style="--delay:60ms" data-lightbox data-caption="Powder Blue &amp; Gold · Glitter">
+              <img src="assets/images/g-blue-gold.webp" width="256" height="204" loading="lazy" alt="Powder blue nails with gold foil stars">
+              <span class="gallery-overlay"><svg class="icon" aria-hidden="true"><use href="#i-zoom"/></svg><span class="gallery-overlay-title">Powder Blue &amp; Gold</span><span class="gallery-overlay-tag">Glitter</span></span>
+            </a>
+            <a href="assets/images/g-minimal-leaf.webp" class="gallery-item group aspect-square reveal reveal-zoom" style="--delay:120ms" data-lightbox data-caption="Botanical Line · Minimal">
+              <img src="assets/images/g-minimal-leaf.webp" width="256" height="204" loading="lazy" alt="Nude nails with minimal black leaf line art">
+              <span class="gallery-overlay"><svg class="icon" aria-hidden="true"><use href="#i-zoom"/></svg><span class="gallery-overlay-title">Botanical Line</span><span class="gallery-overlay-tag">Minimal</span></span>
+            </a>
+            <a href="assets/images/g-burgundy.webp" class="gallery-item group aspect-square reveal reveal-zoom" style="--delay:180ms" data-lightbox data-caption="Merlot Luxe · Seasonal">
+              <img src="assets/images/g-burgundy.webp" width="256" height="204" loading="lazy" alt="Deep burgundy glossy nails with gold accent">
+              <span class="gallery-overlay"><svg class="icon" aria-hidden="true"><use href="#i-zoom"/></svg><span class="gallery-overlay-title">Merlot Luxe</span><span class="gallery-overlay-tag">Seasonal</span></span>
+            </a>
+            <a href="assets/images/g-pink-chrome.webp" class="gallery-item group aspect-[4/5] reveal reveal-zoom" style="--delay:240ms" data-lightbox data-caption="Glazed Pearl · Chrome">
+              <img src="assets/images/g-pink-chrome.webp" width="256" height="204" loading="lazy" alt="Glazed pearl chrome nails in soft pink">
+              <span class="gallery-overlay"><svg class="icon" aria-hidden="true"><use href="#i-zoom"/></svg><span class="gallery-overlay-title">Glazed Pearl</span><span class="gallery-overlay-tag">Chrome</span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY CHOOSE US ============ -->
+    <section class="section bg-cream-100" aria-labelledby="why-title">
+      <div class="container-x grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
+        <div class="relative mx-auto w-full max-w-md lg:max-w-none reveal reveal-left">
+          <div class="arch img-zoom group aspect-[4/5] w-[82%] bg-blush shadow-card">
+            <img src="assets/images/sig-floral.webp" width="402" height="296" loading="lazy" alt="Close-up of floral nail art being finished in the studio" class="h-full w-full object-cover">
+          </div>
+          <div class="absolute bottom-[-6%] right-0 w-[48%] overflow-hidden rounded-2xl border-[6px] border-cream-100 shadow-lift">
+            <img src="assets/images/sig-french.webp" width="396" height="296" loading="lazy" alt="Fresh French manicure" class="aspect-square h-full w-full object-cover">
+          </div>
+          <div class="absolute left-[64%] top-8 flex h-28 w-28 -translate-x-1/2 flex-col items-center justify-center rounded-full bg-burgundy text-center text-cream shadow-lift sm:h-32 sm:w-32">
+            <span class="font-display text-3xl sm:text-4xl">8+</span>
+            <span class="mt-1 text-[0.55rem] font-semibold uppercase leading-tight tracking-[0.2em]">Years of<br>artistry</span>
+          </div>
+        </div>
+
+        <div>
+          <p class="eyebrow reveal">Why choose us</p>
+          <h2 id="why-title" class="heading-2 mt-4 reveal" style="--delay:60ms">Crafted with care, <em>finished to perfection.</em></h2>
+          <p class="lead mt-5 max-w-lg reveal" style="--delay:120ms">Every appointment is an unhurried ritual — from consultation to the final top coat.</p>
+
+          <ul class="mt-10 grid gap-8 sm:grid-cols-2">
+            <li class="group flex gap-4 reveal" style="--delay:0ms">
+              <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
+              <div>
+                <h3 class="font-sans text-sm font-semibold uppercase tracking-[0.18em] text-ink">Hygiene first</h3>
+                <p class="mt-2 text-sm leading-relaxed text-ink-soft">Autoclave-sterilised tools, single-use files and sanitised stations for every guest.</p>
+              </div>
+            </li>
+            <li class="group flex gap-4 reveal" style="--delay:90ms">
+              <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-gem"/></svg></span>
+              <div>
+                <h3 class="font-sans text-sm font-semibold uppercase tracking-[0.18em] text-ink">Premium products</h3>
+                <p class="mt-2 text-sm leading-relaxed text-ink-soft">Vegan, cruelty-free and HEMA-free gels from trusted professional brands.</p>
+              </div>
+            </li>
+            <li class="group flex gap-4 reveal" style="--delay:180ms">
+              <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg></span>
+              <div>
+                <h3 class="font-sans text-sm font-semibold uppercase tracking-[0.18em] text-ink">Experienced artists</h3>
+                <p class="mt-2 text-sm leading-relaxed text-ink-soft">Certified artists trained in nail art, structured gel, extensions and bridal work.</p>
+              </div>
+            </li>
+            <li class="group flex gap-4 reveal" style="--delay:270ms">
+              <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-palette"/></svg></span>
+              <div>
+                <h3 class="font-sans text-sm font-semibold uppercase tracking-[0.18em] text-ink">Personalised designs</h3>
+                <p class="mt-2 text-sm leading-relaxed text-ink-soft">Each set is designed around your style, nail shape, outfit and occasion.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="relative overflow-hidden bg-blush-100 py-16 md:py-20" aria-labelledby="testimonials-title">
+      <svg class="floral-art -left-4 top-1/2 hidden h-56 w-40 -translate-y-1/2 -rotate-12 sm:block lg:left-8 lg:h-64" aria-hidden="true"><use href="#art-floral"/></svg>
+      <svg class="floral-art -right-4 top-1/2 hidden h-56 w-40 -translate-y-1/2 rotate-12 -scale-x-100 sm:block lg:right-8 lg:h-64" aria-hidden="true"><use href="#art-floral"/></svg>
+
+      <div class="container-x relative">
+        <h2 id="testimonials-title" class="sr-only">What our clients say</h2>
+        <div class="mx-auto max-w-3xl" data-slider aria-roledescription="carousel" aria-label="Client testimonials">
+          <div class="flex items-center gap-3 sm:gap-8">
+            <button type="button" class="icon-btn hidden shrink-0 sm:inline-flex" data-slider-prev aria-label="Previous testimonial">
+              <svg class="icon" aria-hidden="true"><use href="#i-chevron-left"/></svg>
+            </button>
+
+            <div class="slider-viewport flex-1">
+              <div class="slider-track" data-slider-track aria-live="polite">
+                <figure class="px-2 text-center" role="group" aria-roledescription="slide" aria-label="1 of 4">
+                  <blockquote class="font-display text-2xl leading-snug text-burgundy sm:text-3xl">“Beautiful nails, beautiful mood.”</blockquote>
+                  <p class="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-ink-soft">The floral set Aanya designed for my birthday was pure art. Two and a half weeks later, still not a single chip.</p>
+                  <div class="stars mt-5" aria-label="Rated 5 out of 5"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+                  <figcaption class="mt-3 text-xs text-ink-soft">— Harleen K., <span class="text-ink-mute">Floral Art</span></figcaption>
+                </figure>
+                <figure class="px-2 text-center" role="group" aria-roledescription="slide" aria-label="2 of 4">
+                  <blockquote class="font-display text-2xl leading-snug text-burgundy sm:text-3xl">“My bridal nails were a dream.”</blockquote>
+                  <p class="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-ink-soft">They matched my lehenga perfectly — gold leaf, pearls, everything. Every photo from the wedding shows them off.</p>
+                  <div class="stars mt-5" aria-label="Rated 5 out of 5"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+                  <figcaption class="mt-3 text-xs text-ink-soft">— Simran D., <span class="text-ink-mute">Bridal Nails</span></figcaption>
+                </figure>
+                <figure class="px-2 text-center" role="group" aria-roledescription="slide" aria-label="3 of 4">
+                  <blockquote class="font-display text-2xl leading-snug text-burgundy sm:text-3xl">“Spotless studio, gentle hands.”</blockquote>
+                  <p class="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-ink-soft">You can tell hygiene matters here. Sealed tool pouches, fresh files and the most relaxing hand massage.</p>
+                  <div class="stars mt-5" aria-label="Rated 5 out of 5"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+                  <figcaption class="mt-3 text-xs text-ink-soft">— Priya M., <span class="text-ink-mute">Luxury Spa Package</span></figcaption>
+                </figure>
+                <figure class="px-2 text-center" role="group" aria-roledescription="slide" aria-label="4 of 4">
+                  <blockquote class="font-display text-2xl leading-snug text-burgundy sm:text-3xl">“Finally, extensions that feel natural.”</blockquote>
+                  <p class="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-ink-soft">Light, thin and strong. The chrome finish catches the light every time I move my hands.</p>
+                  <div class="stars mt-5" aria-label="Rated 5 out of 5"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+                  <figcaption class="mt-3 text-xs text-ink-soft">— Navneet S., <span class="text-ink-mute">Nail Extensions</span></figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <button type="button" class="icon-btn hidden shrink-0 sm:inline-flex" data-slider-next aria-label="Next testimonial">
+              <svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg>
+            </button>
+          </div>
+          <div class="mt-8 flex justify-center gap-2" data-slider-dots></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INSTAGRAM ============ -->
+    <section class="section" aria-labelledby="insta-title">
+      <div class="container-x">
+        <div class="flex flex-col items-center text-center">
+          <p class="eyebrow reveal">Follow the glow</p>
+          <h2 id="insta-title" class="heading-2 mt-3 reveal" style="--delay:60ms">@nailsbya <em>on Instagram</em></h2>
+        </div>
+        <ul class="mt-10 grid grid-cols-3 gap-2 sm:gap-3 lg:grid-cols-6">
+          <li class="reveal reveal-zoom"><a href="https://www.instagram.com/" target="_blank" rel="noopener" class="group relative block aspect-square overflow-hidden bg-blush"><img src="assets/images/sig-chrome.webp" width="402" height="296" loading="lazy" alt="Instagram post: pink chrome nails" class="h-full w-full object-cover transition duration-700 group-hover:scale-110"><span class="absolute inset-0 flex items-center justify-center bg-burgundy/60 text-cream opacity-0 transition duration-500 group-hover:opacity-100"><svg class="icon h-7 w-7" aria-hidden="true"><use href="#i-instagram"/></svg></span></a></li>
+          <li class="reveal reveal-zoom" style="--delay:60ms"><a href="https://www.instagram.com/" target="_blank" rel="noopener" class="group relative block aspect-square overflow-hidden bg-blush"><img src="assets/images/g-blue-gold.webp" width="256" height="204" loading="lazy" alt="Instagram post: blue and gold nails" class="h-full w-full object-cover transition duration-700 group-hover:scale-110"><span class="absolute inset-0 flex items-center justify-center bg-burgundy/60 text-cream opacity-0 transition duration-500 group-hover:opacity-100"><svg class="icon h-7 w-7" aria-hidden="true"><use href="#i-instagram"/></svg></span></a></li>
+          <li class="reveal reveal-zoom" style="--delay:120ms"><a href="https://www.instagram.com/" target="_blank" rel="noopener" class="group relative block aspect-square overflow-hidden bg-blush"><img src="assets/images/sig-glam.webp" width="398" height="296" loading="lazy" alt="Instagram post: gold leaf bridal nails" class="h-full w-full object-cover transition duration-700 group-hover:scale-110"><span class="absolute inset-0 flex items-center justify-center bg-burgundy/60 text-cream opacity-0 transition duration-500 group-hover:opacity-100"><svg class="icon h-7 w-7" aria-hidden="true"><use href="#i-instagram"/></svg></span></a></li>
+          <li class="reveal reveal-zoom" style="--delay:180ms"><a href="https://www.instagram.com/" target="_blank" rel="noopener" class="group relative block aspect-square overflow-hidden bg-blush"><img src="assets/images/g-red-heart.webp" width="256" height="204" loading="lazy" alt="Instagram post: red heart nail art" class="h-full w-full object-cover transition duration-700 group-hover:scale-110"><span class="absolute inset-0 flex items-center justify-center bg-burgundy/60 text-cream opacity-0 transition duration-500 group-hover:opacity-100"><svg class="icon h-7 w-7" aria-hidden="true"><use href="#i-instagram"/></svg></span></a></li>
+          <li class="reveal reveal-zoom" style="--delay:240ms"><a href="https://www.instagram.com/" target="_blank" rel="noopener" class="group relative block aspect-square overflow-hidden bg-blush"><img src="assets/images/g-ombre.webp" width="254" height="204" loading="lazy" alt="Instagram post: pastel ombré nails" class="h-full w-full object-cover transition duration-700 group-hover:scale-110"><span class="absolute inset-0 flex items-center justify-center bg-burgundy/60 text-cream opacity-0 transition duration-500 group-hover:opacity-100"><svg class="icon h-7 w-7" aria-hidden="true"><use href="#i-instagram"/></svg></span></a></li>
+          <li class="reveal reveal-zoom" style="--delay:300ms"><a href="https://www.instagram.com/" target="_blank" rel="noopener" class="group relative block aspect-square overflow-hidden bg-blush"><img src="assets/images/sig-floral.webp" width="402" height="296" loading="lazy" alt="Instagram post: white floral nail art" class="h-full w-full object-cover transition duration-700 group-hover:scale-110"><span class="absolute inset-0 flex items-center justify-center bg-burgundy/60 text-cream opacity-0 transition duration-500 group-hover:opacity-100"><svg class="icon h-7 w-7" aria-hidden="true"><use href="#i-instagram"/></svg></span></a></li>
+        </ul>
+        <div class="mt-10 text-center">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="btn btn-outline">
+            <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>
+            Follow @nailsbya
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BOOKING CTA ============ -->
+    <section class="grid lg:grid-cols-2" aria-labelledby="cta-title">
+      <div class="relative min-h-[260px] overflow-hidden sm:min-h-[320px]">
+        <img src="assets/images/cta-hand.webp" width="972" height="282" loading="lazy" alt="Hand in a cream knit sweater showing nude nails with white floral art" class="absolute inset-0 h-full w-full object-cover object-[60%_center]">
+        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-burgundy-800/60 lg:to-burgundy/90" aria-hidden="true"></div>
+      </div>
+      <div class="relative overflow-hidden bg-burgundy px-6 py-14 sm:px-12 lg:px-16 lg:py-20">
+        <svg class="floral-art -bottom-6 right-2 h-48 w-36 text-gold/50 sm:right-10 sm:h-56" aria-hidden="true"><use href="#art-floral"/></svg>
+        <div class="relative max-w-md reveal">
+          <p class="eyebrow text-gold-300">Ready to glow?</p>
+          <h2 id="cta-title" class="mt-4 font-display text-3xl leading-tight text-cream sm:text-4xl">Book your next nail appointment.</h2>
+          <p class="mt-4 text-sm leading-relaxed text-cream/75">Choose your service, artist and time in under a minute. Same-week slots often available.</p>
+          <a href="/booking" class="btn btn-light mt-8">
+            <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+            Book Now
+            <svg class="icon btn-arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NailSalon",
+      "name": "Nails by A — Nail Art Studio",
+      "image": "https://www.nailsbya.com/assets/images/og-image.jpg",
+      "url": "https://www.nailsbya.com/",
+      "telephone": "+91-98765-43210",
+      "email": "hello@nailsbya.com",
+      "priceRange": "₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2nd Floor, Model Town Extension",
+        "addressLocality": "Ludhiana",
+        "addressRegion": "Punjab",
+        "postalCode": "141002",
+        "addressCountry": "IN"
+      },
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "11:00", "closes": "20:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "10:00", "closes": "19:00" }
+      ],
+      "sameAs": ["https://www.instagram.com/", "https://www.pinterest.com/"]
+    }
+    </script>

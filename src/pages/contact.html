@@ -1,0 +1,147 @@
+<!---
+{
+  "title": "Contact Nails by A — Nail Studio in Model Town, Ludhiana",
+  "description": "Get in touch with Nails by A in Ludhiana, Punjab. Call, email, WhatsApp or send us a message. Find our address, studio hours and map.",
+  "nav": "contact"
+}
+--->
+    <section class="page-hero" aria-labelledby="page-title">
+      <svg class="floral-art -left-6 bottom-0 hidden h-56 w-40 -rotate-6 md:block" aria-hidden="true"><use href="#art-floral"/></svg>
+      <div class="container-x relative py-14 text-center md:py-20">
+        <nav aria-label="Breadcrumb" class="flex justify-center">
+          <ol class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li aria-hidden="true">/</li>
+            <li aria-current="page">Contact</li>
+          </ol>
+        </nav>
+        <h1 id="page-title" class="display-1 mt-6 text-[clamp(2.2rem,4vw+1rem,4rem)] animate-fade-up">Let’s <em>talk nails.</em></h1>
+        <p class="lead mx-auto mt-5 max-w-lg animate-fade-up [animation-delay:120ms]">Questions about a design, bridal dates or group bookings? We usually reply within a few hours.</p>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT CARDS ============ -->
+    <section class="relative z-10 -mt-8" aria-label="Contact details">
+      <div class="container-x">
+        <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <li class="reveal">
+            <a href="tel:+919876543210" class="card group flex h-full items-start gap-4 p-6 transition hover:-translate-y-1 hover:shadow-lift">
+              <span class="feature-icon h-12 w-12"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+              <span><span class="block text-[0.66rem] font-semibold uppercase tracking-[0.22em] text-ink-mute">Call us</span><span class="mt-1 block font-display text-lg text-ink">+91 98765 43210</span></span>
+            </a>
+          </li>
+          <li class="reveal" style="--delay:70ms">
+            <a href="mailto:hello@nailsbya.com" class="card group flex h-full items-start gap-4 p-6 transition hover:-translate-y-1 hover:shadow-lift">
+              <span class="feature-icon h-12 w-12"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+              <span><span class="block text-[0.66rem] font-semibold uppercase tracking-[0.22em] text-ink-mute">Email</span><span class="mt-1 block break-all font-display text-lg text-ink">hello@nailsbya.com</span></span>
+            </a>
+          </li>
+          <li class="reveal" style="--delay:140ms">
+            <a href="https://maps.google.com/?q=Model+Town+Extension+Ludhiana+Punjab" target="_blank" rel="noopener" class="card group flex h-full items-start gap-4 p-6 transition hover:-translate-y-1 hover:shadow-lift">
+              <span class="feature-icon h-12 w-12"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg></span>
+              <span><span class="block text-[0.66rem] font-semibold uppercase tracking-[0.22em] text-ink-mute">Visit</span><span class="mt-1 block font-display text-lg leading-snug text-ink">Model Town Ext., Ludhiana</span></span>
+            </a>
+          </li>
+          <li class="reveal" style="--delay:210ms">
+            <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="card group flex h-full items-start gap-4 p-6 transition hover:-translate-y-1 hover:shadow-lift">
+              <span class="feature-icon h-12 w-12"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg></span>
+              <span><span class="block text-[0.66rem] font-semibold uppercase tracking-[0.22em] text-ink-mute">WhatsApp</span><span class="mt-1 block font-display text-lg text-ink">Chat with us</span></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ FORM + INFO ============ -->
+    <section class="section" aria-labelledby="form-title">
+      <div class="container-x grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
+        <div class="lg:col-span-7">
+          <p class="eyebrow reveal">Send a message</p>
+          <h2 id="form-title" class="heading-2 mt-4 reveal" style="--delay:60ms">We’d love to <em>hear from you.</em></h2>
+
+          <div class="mt-8">
+            <!-- Add data-endpoint="https://formspree.io/f/xxxx" (or your API) to deliver messages -->
+            <form class="grid grid-cols-1 gap-5 sm:grid-cols-2" data-validate aria-describedby="form-note">
+              <div>
+                <label for="ct-name" class="form-label">Name <span class="req">*</span></label>
+                <input id="ct-name" name="name" type="text" class="form-input" autocomplete="name" required minlength="2" placeholder="Your name" aria-describedby="ct-name-error">
+                <p id="ct-name-error" class="form-error" hidden></p>
+              </div>
+              <div>
+                <label for="ct-phone" class="form-label">Phone</label>
+                <input id="ct-phone" name="phone" type="tel" class="form-input" autocomplete="tel" pattern="\+?[0-9\s\(\)\-]{10,16}" data-msg-pattern="Please enter a valid phone number." placeholder="+91" aria-describedby="ct-phone-error">
+                <p id="ct-phone-error" class="form-error" hidden></p>
+              </div>
+              <div class="sm:col-span-2">
+                <label for="ct-email" class="form-label">Email <span class="req">*</span></label>
+                <input id="ct-email" name="email" type="email" class="form-input" autocomplete="email" required placeholder="you@example.com" aria-describedby="ct-email-error">
+                <p id="ct-email-error" class="form-error" hidden></p>
+              </div>
+              <div class="sm:col-span-2">
+                <label for="ct-topic" class="form-label">Topic</label>
+                <select id="ct-topic" name="topic" class="form-input">
+                  <option>General enquiry</option>
+                  <option>Bridal &amp; events</option>
+                  <option>Group / party booking</option>
+                  <option>Feedback</option>
+                  <option>Careers</option>
+                </select>
+              </div>
+              <div class="sm:col-span-2">
+                <label for="ct-message" class="form-label">Message <span class="req">*</span></label>
+                <textarea id="ct-message" name="message" class="form-input" rows="5" required minlength="10" placeholder="Tell us a little about what you’re looking for…" aria-describedby="ct-message-error"></textarea>
+                <p id="ct-message-error" class="form-error" hidden></p>
+              </div>
+              <div class="flex flex-col items-start gap-4 sm:col-span-2 sm:flex-row sm:items-center sm:justify-between">
+                <p id="form-note" class="text-xs text-ink-mute">Fields marked <span class="text-burgundy">*</span> are required.</p>
+                <button type="submit" class="btn btn-primary w-full sm:w-auto">
+                  Send message
+                  <svg class="icon btn-arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+                </button>
+              </div>
+            </form>
+            <div class="alert-success mt-6" data-form-success hidden tabindex="-1" role="status">
+              <svg class="icon h-5 w-5 text-burgundy" aria-hidden="true"><use href="#i-check"/></svg>
+              <p><strong class="font-semibold text-burgundy">Thank you!</strong> Your message is on its way — we’ll get back to you shortly.</p>
+            </div>
+            <div class="alert-success mt-6 border-red-800/30" data-form-error hidden role="alert">
+              <p>Sorry, we couldn’t send your message. Please call or WhatsApp us instead.</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="lg:col-span-5">
+          <div class="card p-7 sm:p-8 reveal reveal-right">
+            <h2 class="font-display text-2xl">Studio hours</h2>
+            <ul class="mt-5 divide-y divide-gold/15 text-sm">
+              <li class="flex justify-between py-3"><span class="text-ink-soft">Tuesday – Friday</span><span class="font-medium">11:00 AM – 8:00 PM</span></li>
+              <li class="flex justify-between py-3"><span class="text-ink-soft">Saturday – Sunday</span><span class="font-medium">10:00 AM – 7:00 PM</span></li>
+              <li class="flex justify-between py-3"><span class="text-ink-soft">Monday</span><span class="font-medium text-burgundy">Closed</span></li>
+            </ul>
+            <h2 class="mt-8 font-display text-2xl">Address</h2>
+            <address class="mt-3 text-sm not-italic leading-relaxed text-ink-soft">Nails by A — Nail Art Studio<br>2nd Floor, Model Town Extension<br>Ludhiana, Punjab 141002, India</address>
+            <p class="mt-3 text-xs text-ink-mute">Free parking available behind the building.</p>
+            <h2 class="mt-8 font-display text-2xl">Follow us</h2>
+            <div class="mt-4 flex gap-2">
+              <a href="https://www.instagram.com/" class="icon-btn" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon h-5 w-5" aria-hidden="true"><use href="#i-instagram"/></svg></a>
+              <a href="https://www.pinterest.com/" class="icon-btn" target="_blank" rel="noopener" aria-label="Pinterest"><svg class="icon h-5 w-5" aria-hidden="true"><use href="#i-pinterest"/></svg></a>
+              <a href="https://www.facebook.com/" class="icon-btn" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon h-5 w-5" aria-hidden="true"><use href="#i-facebook"/></svg></a>
+              <a href="https://wa.me/919876543210" class="icon-btn" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon h-5 w-5" aria-hidden="true"><use href="#i-whatsapp"/></svg></a>
+            </div>
+            <a href="/booking" class="btn btn-primary btn-block mt-8">
+              <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+              Book online instead
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ MAP ============ -->
+    <section aria-label="Map" class="relative">
+      <iframe
+        title="Map showing Nails by A in Model Town Extension, Ludhiana"
+        src="https://www.google.com/maps?q=Model+Town+Extension,+Ludhiana,+Punjab&amp;z=14&amp;output=embed"
+        class="block h-[360px] w-full border-0 grayscale-[35%] sepia-[15%] md:h-[460px]"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </section>
