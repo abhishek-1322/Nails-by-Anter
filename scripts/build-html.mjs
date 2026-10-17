@@ -12,7 +12,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SRC = join(root, 'src');
-const SITE_URL = 'https://www.nailsbya.com'; // TODO: replace with the production domain
+const SITE_URL = 'https://nails-by-anter.onrender.com'; // TODO: replace with the production domain
 
 const read = (p) => readFileSync(join(SRC, p), 'utf8');
 const FRONT_MATTER = /^<!---([\s\S]*?)--->\s*/;

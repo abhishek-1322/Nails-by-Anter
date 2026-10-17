@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /styleguide.html
 
-Sitemap: https://www.nailsbya.com/sitemap.xml
+Sitemap: https://nails-by-anter.onrender.com/sitemap.xml
